@@ -1,0 +1,97 @@
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Alineación horizontal centrada */
+    align-items: center; /* Alineación vertical centrada */
+    border-bottom: none !important; /* Eliminacion de borde de abajo de tablas */
+}
+
+.col:first-child {
+    flex: 0.5; /* Ajusta el ancho del primer elemento (ID) */
+}
+
+.img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+    margin: auto
+}
+
+.eliminado {
+    background-color: #f8d7da; /* Color de fondo rojo */
+    opacity: 0.3; /* Opcional: Añade opacidad para indicar estado eliminado */
+}
+
+/* Estilos para el botón eliminar */
+.eliminarBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545; /* Rojo */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease;
+}
+
+.eliminarBtn:hover {
+    background-color: #c82333; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el botón modificar */
+.modificarBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffc107; /* Amarillo */
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease;
+}
+
+.modificarBtn:hover {
+    background-color: #e0a800; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el botón recuperar */
+.recuperarBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Verde */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease;
+}
+
+.recuperarBtn:hover {
+    background-color: #218838; /* Cambio de color al pasar el mouse */
+}

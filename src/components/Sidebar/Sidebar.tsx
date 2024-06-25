@@ -19,6 +19,7 @@ import {
   EggAlt as EggAltIcon,
   Straighten as StraightenIcon,
   Category as CategoryIcon,
+  BarChart as BarChartIcon // Añadir importación del icono de BarChart
 } from "@mui/icons-material";
 import SidebarItem from "./SidebarItem";
 import { useNavigate } from "react-router-dom";
@@ -76,7 +77,6 @@ const Sidebar: React.FC = () => {
           overflowY: "scroll",
           alignItems: "center",
           transition: "max-height 0.5s ease", // Transición suave para max-height
-          //justifyContent: "center",
         }}
         onMouseEnter={() => setMaxHeight("97vh")}
         onMouseLeave={() => setMaxHeight("calc(97vh - 50px)")} // Ajusta la altura al salir
@@ -198,6 +198,23 @@ const Sidebar: React.FC = () => {
               </Button>
             </ListItem>
           </SidebarItem>
+
+          {/* Añadir el nuevo elemento "Reportes" aquí */}
+          <SidebarItem icon={<BarChartIcon />} text="Reportes">
+            <ListItem>
+              <Button
+                disableRipple
+                disableTouchRipple
+                className="btn-list-sidebar"
+                startIcon={<BarChartIcon />}
+                sx={buttonStyles}
+                onClick={() => navigate("/reportes")}
+              >
+                Buscar/Descargar
+              </Button>
+            </ListItem>
+          </SidebarItem>
+
           <SidebarItem icon={<BusinessIcon />} text="Empresas">
             <ListItem>
               <Button

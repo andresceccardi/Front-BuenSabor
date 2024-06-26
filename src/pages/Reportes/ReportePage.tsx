@@ -88,7 +88,7 @@ const ReportePage: React.FC = () => {
   };
 
   return (
-    <Box p={3}>
+    <Box p={3} height="100%" overflow="auto">
       <Typography variant="h4" gutterBottom>
         Reportes
       </Typography>

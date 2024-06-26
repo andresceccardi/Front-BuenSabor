@@ -12,6 +12,7 @@ import CajeroPedidos from "./pages/Cajero/CajeroPedidos";
 import CocineroPedidos from "./pages/Cocinero/CocineroPedidos";
 import DeliveryPedidos from "./pages/Delivery/DeliveryPedidos";
 import CategoriaPage from "./pages/CategoriaPage";
+import ReportePage from "./pages/Reportes/ReportePage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/cajeroPedidos" element={<CajeroPedidos />} />
           <Route path="/cocineroPedidos" element={<CocineroPedidos />} />
           <Route path="/deliveryPedidos" element={<DeliveryPedidos />} />
+          <Route path="/reportes" element={<ReportePage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
